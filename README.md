@@ -24,7 +24,7 @@ docker build -t containerdart github.com/nkratzke/containerdart
 docker run -p 8888:8080 -d containerdart
 ```
 
-First command build a new image from a Dockerfile provided in the referenced github repository (this here). The repository is a normal dart repository being processable by pub but has addtionally a so called Dockerfile in it. This Dockerfile defines the image for a container. Therefore 
+First command build a new image from a Dockerfile provided in the referenced github repository (this here). The repository is a normal dart repository being processable by pub but has addtionally a so called Dockerfile in it. This Dockerfile defines the image for a container. Therefore
 
 - it extends a barebone Ubuntu 13.10 system,
 - installs additionally Dart SDK,
@@ -43,7 +43,7 @@ __Thats all.__ All the magic is done by docker processing the following Dockerfi
 # Install a dart container for demonstration purposes.
 # Your dart server app will be accessible via HTTP on container port 8080. The port can be changed.
 # You should adapt this Dockerfile to your needs.
-# If you are new to Dockerfiles please read 
+# If you are new to Dockerfiles please read
 # http://docs.docker.io/en/latest/reference/builder/
 # to learn more about Dockerfiles.
 #
@@ -63,7 +63,7 @@ RUN apt-add-repository ppa:hachre/dart
 RUN apt-get -y update
 RUN apt-get install -y dartsdk
 
-# Install the dart server app. 
+# Install the dart server app.
 # Comment in necessary parts of your dart package necessary to run "pub build"
 # and necessary for your working app.
 # Please check the following links to learn more about pub and build dart apps
@@ -88,13 +88,13 @@ ADD pubspec.yaml  /container/pubspec.yaml
 # comment in if you need test to run pub build
 # ADD test        /container/test
 
-# comment in if you need tool to run pub build      
+# comment in if you need tool to run pub build
 # ADD tool        /container/tool
 
 # comment in if you need lib to run pub build
 # ADD lib         /container/lib
 
-ADD bin          /container/bin       
+ADD bin          /container/bin
 
 # comment out if you do not need web for working app
 ADD web          /container/web

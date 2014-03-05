@@ -1,7 +1,6 @@
 FROM octohost/dart
-MAINTAINER Nane Kratzke <nane@nkode.io>
 
-# Install the dart server app. 
+# Install the dart server app.
 # Comment in necessary parts of your dart package necessary to run "pub build"
 # and necessary for your working app.
 # Please check the following links to learn more about pub and build dart apps
