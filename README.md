@@ -16,6 +16,4 @@ git push octohost master
 
 To view or rebuild the base Dart container - [take a look here](https://github.com/octohost/dart).
 
-Example site \(usually\) at [http://dart.octohost.io](http://dart.octohost.io)
-
 Forked from Nane Kratzke - take a look at the original [README](https://github.com/octohost/dart-app/blob/master/README-original.md), [blog post](http://www.nkode.io/2014/03/05/dockerize-dart.html) or the [original repo](https://github.com/nkratzke/containerdart).
